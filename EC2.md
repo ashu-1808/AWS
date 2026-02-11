@@ -95,7 +95,7 @@ You cannot block anyone but you can customize or add IP address which can access
  - Provides graphical desktop access.
  - Works on Port 3389 (Windows).
 ```
-##Steps to Connect Windows EC2 Instance (RDP)
+## Steps to Connect Windows EC2 Instance (RDP)
  ```
 1.Launch a Windows EC2 instance.
  2.Select the instance and click Connect.
@@ -127,15 +127,77 @@ B.HTTPS (HyperText Transfer Protocol Secure)
 5.URL starts with https://.
 ```
 
+## Package management
+```
+-For downloading package you need to install package management tool
+-Package management tool is software that helps you install, update, remove and manage
+ software packages automatically on a operating system
+-With systemctl you can start, stop, restart, check status and perform other advanced
+ action on services
+1.Yum : [Yellowdog Updater Modifier]
+ → debian, ubuntu, mint, kali linux
+2.apt : [Advanced Packaged Tool]
+ → Red Hat Enterprise Linux [RHEL], CentOS
+3.dnf : [Dandified YUM] faster replacement for yum.
+ → Fedora, RHEL8+, centOS 8+
+```
+## http or https webserver apache (httpd):
+```
+ Apache (httpd) Web Server – Demo to Host Website on EC2
+  -Apache is a web server used to host websites.
+  -Service name in Linux is httpd.
+  -Works on HTTP (80) and HTTPS (443).
 
+Steps:
+1.Create a Linux EC2 instance.
+2.Allow HTTP (80) and HTTPS (443) in Security Group.
+3.Connect to the instance using SSH.
+4.Install Apache:
+  → sudo yum install httpd -y
+5.Start Apache service:
+  → sudo systemctl start httpd
+6.Enable Apache at boot:
+  → sudo systemctl enable httpd
+7.Check service status:
+  → sudo systemctl status httpd
+8.Create a sample webpage:
+  → echo "This is my website!" > /var/www/html/index.html
+9.Copy the Public IP in browser.
 
+  Website hosted successfully on EC2 ✅
+```
 
+## SSH Configuration Demo (Ubuntu EC2) – Simple Steps
+```
+1.Launch Ubuntu EC2 instance.
+2.Connect using SSH.
+3.Switch to root:
+ → sudo -i
+4.Create new user:
+ → adduser seema
+5.Switch to user:
+ → su - seema
+6.Generate SSH key:
+ → ssh-keygen
+7.Check public key:
+ → cat ~/.ssh/id_rsa.pub
+( Copy and save it on your system.)
+8.Create SSH folder (if not present):
+ → mkdir -p ~/.ssh
+9.Add public key to authorized_keys:
+ → cp ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
+10.Set permission:
+ → chmod 400 ~/.ssh/authorized_keys
+11.Open MobaXterm :
+   Start Session
+   Remote session:(copy ip address of your instance)
+   Advanced setting
+   select seema-key.pemkey
+   login as seema
+ SSH configured successfully ✅
+```
 
-
-
-
-
-
+## instance purchase option
 
 
 
