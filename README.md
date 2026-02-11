@@ -12,16 +12,18 @@ Cloud computing is on demand delivery of compute power, database and other resou
 ## IaaS vs PaaS vs SaaS comparison table
 ![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/b6834737dbec8e3d232cdbcb64871a7f21dcd4a5/iaas_paas_saas.webp)
 
+
+## Drawbacks of cloud computing:
 ```
-Drawbacks of cloud computing:
 1.Cloud specialist skills
 2.Downtime / Reliability
 2.Restricted controls
 4.Latency issue
 5.Vendor Lockin
 6.Hidden cost
-
-Cloud deployment models:
+```
+## Cloud deployment models:
+```
 1.Public Cloud : AWS, AZURE, GCP : Globally
 2.Private cloud : Enterprise Cloud IBM, Dell : Locally
 3.Hybrid cloud : Netflix
