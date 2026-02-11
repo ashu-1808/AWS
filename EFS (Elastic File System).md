@@ -11,12 +11,7 @@
 -Supported only by Linux OS.
 -For Windows → Use Amazon FSx.
 ```
-## EFS Architecture (As in Diagram)
-```
-EC2 (AZ-1a) → EFS Mount Target
-EC2 (AZ-1b) → EFS Mount Target
-Both connect to → EFS Shared Storage (inside VPC)
-```
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/308188f7e959c51c06909f4e649eb06a43ce3f82/efs-ec2-how-it-works.png)
 
 ## Process of EFS Setup (Based on Imag
 Multiple EC2 instances in different AZs use the same EFS storage.
@@ -70,4 +65,4 @@ EC2 (AZ1) → Mount Target (AZ1)
 EC2 (AZ2) → Mount Target (AZ2)
 EC2 (AZ3) → Mount Target (AZ3)
 All → Connected to One EFS File System
-```
+
