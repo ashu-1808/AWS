@@ -247,19 +247,23 @@ Instance Types – Combination of **CPU, RAM, Storage & Networking capacity**.
 2. Compute Optimized
  - High CPU performance.
  - Used for compute-intensive tasks.
- - Example: gaming servers, machine learning.
+ - Example: c5.large, c6g.medium(gaming servers, machine learning.)
 3. Memory Optimized
  - High RAM capacity.
  - Best for big data, analytics & caching.
+ -Example: r5.large, x1e.xlarge
 4. Storage Optimized
  - High disk performance (SSD/HDD).
  - Used for databases & data-intensive apps (e.g., Hadoop).
+ -Example: i3.large, d2.xlarge
 5. Accelerated Computing
  - Includes GPU support.
  - Used for AI, ML models & batch processing.
+ -
 6. HPC Optimized (High Performance Computing)
- -Designed for high-speed computing workloads.
- -Used for scientific simulations & complex calculations.
+ - Designed for high-speed computing workloads.
+ - Used for scientific simulations & complex calculations.
+ -Example: p3.2xlarge, g4dn.xlarge
 ```
 ## EC2 Instance Purchase Option
 ```
