@@ -1,68 +1,44 @@
 
 #  Amazon S3
-
-
-## Amazon S3 – Storage Classes 
-```
-1. S3 Standard
-- Used for frequently accessed data
-- High performance and low latency
-- Durability: 99.999999999% (11 9’s)
-- Availability: 99.99%
-- Storage cost is higher
-- Retrieval cost is very low
-👉 Example: Websites, applications, active data
-
-2. S3 Standard – IA (Infrequent Access)
-- For data accessed less frequently
-- Lower storage cost than Standard
-- Retrieval charges apply
-- Durability: -99.999999999-
-- Availability: 099.9%
-👉 Example: Backups, long-term storage
+Here are your notes in **clean bullet format** 👇
 
 ---
 
-3. S3 Intelligent-Tiering
-- Automatically moves data between tiers based on usage
-- Saves cost automatically
-- No retrieval fees
-- Durability: 99.999999999%
-- Availability: 99.9%
-👉 Best when access pattern is unknown
+# ✅ Amazon S3 – Bullet Notes
 
-4. S3 One Zone – IA
-- Data stored in **single Availability Zone**
-- Lower cost than Standard-IA
-- Retrieval charges apply
-- Durability: -99.999999999%
-- Availability: -99.5%
-👉 Example: Secondary backups, non-critical data
-
-
-5.S3 Glacier (Archive Storage)*
-
- a. S3 Glacier Instant Retrieval
-  - Archive data but needs immediate access
-  - Retrieval in milliseconds
-  - Up to 68% cheaper than Standard-IA
-  - Durability: 99.999999999%
-  👉 Example: Medical images, media archives
-
- b. S3 Glacier Flexible Retrieval
-  - For archive data accessed 1–2 times per year
-  - Retrieval time: Minutes to hours
-  - Lower cost than Instant Retrieval
-  👉 Example: Backup archives
-
- c. S3 Glacier Deep Archive
-  - Cheapest S3 storage class
-  - For data rarely accessed (once a year or less)
-  - Retrieval time: Around 12 hours
-  - Designed for long-term retention (7–20+ years)
-  👉 Example: Compliance records, old financial data
+## 🔹 What is S3?
+```
+1 S3 is region-specific
+2 Used to store and retrieve unlimited data
+3 It is object-based storage
+- ❌ Cannot install OS on S3
+- Data stored in minimum 3 AZs in same region
+- Very high durability (11 9’s)
+- Buckets in S3
+   1. Bucket is a container for objects
+   2. Bucket structure is flat
+   3. ❌ No nested buckets (no bucket inside bucket)
+   4. Bucket name must be globally unique  
+-S3 Object Size
+   1. Minimum → 0 bytes
+   2. Maximum → 5 TB
+-S3 Bucket Limits
+   1. Default → 100 buckets per account
+   2. Can request increase from AWS
+-S3 Bucket Name Rules
+   1. Must be globally unique
+   2. No duplicate bucket names in AWS
+-S3 Bucket Access Methods
+   1.ACL (Access Control List)
+    a. Used for basic permissions
+    b. Controls access at:Bucket level
+                      Object level
+-S3 Bucket Policy
+   1. Must delete all objects before deleting bucket
+   2. JSON-based
+   3. Used for detailed permissions
+   4. Applied at bucket level
 
 ```
-
 ![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/e7cf2f64449efbdfff60d1468816ef30d1859d9f/storage%20class.webp)
 
