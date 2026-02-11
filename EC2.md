@@ -108,19 +108,18 @@ Protocol that allows user to remotely access and control another computer.
  9.Click Connect and enter the password.
  10.Click Yes to trust the certificate.
 
-"While creating webserver you need to add http/https web-server"
 " Windows instance connected successfully ✅"
 ```
-HTTP (HyperText Transfer Protocol)
+## While creating webserver you need to add http/https web-server
 ```
+A.HTTP (HyperText Transfer Protocol)
 1.Works on Port 80.
 2.Used to transfer data between browser and server.
 3.Data is not encrypted.
 4.Less secure for communication.
 5.URL starts with http://.
-```
-HTTPS (HyperText Transfer Protocol Secure)
-```
+
+B.HTTPS (HyperText Transfer Protocol Secure)
 1.Works on Port 443.
 2.Secure version of HTTP.
 3.Data is encrypted using SSL/TLS.
