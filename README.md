@@ -4,10 +4,11 @@
 Cloud computing is on demand delivery of compute power, database and other resources through a cloud provider via internet.
 
 # Services in cloud:
+```
 1.IaaS → Infrastructure As A Service
 2.PaaS → Platform As A Service
 3.SaaS → Software As A Service
-
+```
 ## IaaS vs PaaS vs SaaS comparison table
 ![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/b6834737dbec8e3d232cdbcb64871a7f21dcd4a5/iaas_paas_saas.webp)
 
