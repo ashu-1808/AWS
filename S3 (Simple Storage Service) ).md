@@ -64,16 +64,6 @@
 
 ```
 
-#  Quick Comparison
-
-| Storage Class    | Access     | Cost      | Retrieval Time |
-| ---------------- | ---------- | --------- | -------------- |
-| Standard         | Frequent   | High      | Instant        |
-| Standard-IA      | Infrequent | Medium    | Instant        |
-| Intelligent      | Auto       | Optimized | Instant        |
-| One Zone-IA      | Infrequent | Lower     | Instant        |
-| Glacier Instant  | Rare       | Low       | Milliseconds   |
-| Glacier Flexible | Very Rare  | Very Low  | Minutes–Hours  |
-| Glacier Deep     | Very Rare  | Cheapest  | ~12 Hours      |
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/32805731ed6b55aef4ec573ef398a3f380c7d6e3/s3%20storage%20class.png)
 
 
