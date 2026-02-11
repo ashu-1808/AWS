@@ -64,6 +64,5 @@
 
 ```
 
-![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/32805731ed6b55aef4ec573ef398a3f380c7d6e3/s3%20storage%20class.png)
-
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/e7cf2f64449efbdfff60d1468816ef30d1859d9f/storage%20class.webp)
 
