@@ -255,11 +255,11 @@ Instance Types – Combination of CPU, RAM, Storage & Networking capacity.
 4. Storage Optimized
  - High disk performance (SSD/HDD).
  - Used for databases & data-intensive apps (e.g., Hadoop).
- -Example: i3.large, d2.xlarge
+ -Example: i3.large, d2.xlarge, i4i.large
 5. Accelerated Computing
  - Includes GPU support.
  - Used for AI, ML models & batch processing.
- -
+ -Examples: p3.2xlarge, g4dn.xlarge, inf1.xlarge, trn1.2xlarge
 6. HPC Optimized (High Performance Computing)
  - Designed for high-speed computing workloads.
  - Used for scientific simulations & complex calculations.
