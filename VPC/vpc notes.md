@@ -87,8 +87,11 @@ Types of VPC → 1. Default VPC
 - NAT gateway is one way door, so outside traffic cannot initiate
 - Only elastic IP is given to NAT gateway
 - You will be charged for creating and using NAT gateway
-- Before deleting a NAT gateway, disassociate its elastic IP address, but does not release address from your account, you have to release it manually
-- We use NAT gateway so that instances in private subnet can connect to the services outside your VPC or internet but external services or internet cannot initiate a connection with those instances
+- Before deleting a NAT gateway, disassociate its elastic IP address, but
+  does not release address from your account, you have to release it manually
+- We use NAT gateway so that instances in private subnet can connect to the
+  services outside your VPC or internet but external services or internet
+   cannot initiate a connection with those instances
 - With NAT gateway private instances don’t need public IP address to reach internet
 
 ```
@@ -96,7 +99,8 @@ Types of VPC → 1. Default VPC
 ```
 - It is a computer acting as a security gatekeeper
 - It is essentially a jump server or jump base
-- Acting as an intermediary for secure connection to resources within private network
+- Acting as an intermediary for secure connection to resources
+  within private network
 - 8.8.8.8 = google DNS server
 ```
 
