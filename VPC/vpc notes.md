@@ -102,7 +102,7 @@ Types of VPC → 1. Default VPC
 
 ## Difference between NACL & Security Group
 ![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/2276e5c262a573d4ad8f9a7766f131d8bbdc1938/VPC/NACL%26SC-GROUP.png)                             |
-##notes
+## notes
 ```
 - If traffic is allowed in Security Group, response traffic is automatically allowed (because   it is stateful).
 - In NACL, you must explicitly allow both inbound and outbound traffic.
