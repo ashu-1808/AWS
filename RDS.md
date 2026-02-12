@@ -75,8 +75,7 @@ Table
 - There are some settings managed by users:
     1. Managed DB instances
     2. Creation of relational database schema or design of database
-```
-```
+
 - There are 8 Relational Database options on AWS:
     1. Aurora (MySQL – compatible)
     2. Aurora (PostgreSQL – compatible)
