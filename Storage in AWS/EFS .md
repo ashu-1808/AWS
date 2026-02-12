@@ -1,4 +1,4 @@
-📁 EFS (Elastic File System)
+# EFS (Elastic File System)
 ## What is EFS?
 ```
 -EFS is a file storage service for EC2.
