@@ -20,21 +20,9 @@
 Types of VPC → 1. Default VPC
                2. Custom VPC
 ```
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/e13cb76891f22c79b7d06a14897306dfbc079ab3/VPC/DefaultVPC-vs-CustomVPC.jpg)
 
-| Feature          | **Default VPC**                             | **Custom VPC**                   |
-| ---------------- | ------------------------------------------- | -------------------------------- |
-| Creation         | Automatically created by AWS in each region | Manually created by user         |
-| CIDR Block       | Predefined by AWS (usually /16)             | You choose your own CIDR block   |
-| Subnets          | Public subnets already created in all AZs   | You create subnets manually      |
-| Internet Gateway | Already attached                            | You must create and attach IGW   |
-| Route Table      | Pre-configured                              | You configure route tables       |
-| Security Group   | Default SG available                        | You create and manage SG         |
-| NACL             | Default NACL available                      | You configure NACL               |
-| Internet Access  | Instances get internet by default           | You must configure manually      |
-| Control          | Less control                                | Full control over networking     |
-| Use Case         | Quick testing, simple setups                | Production, secure architectures |
 
-![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/2276e5c262a573d4ad8f9a7766f131d8bbdc1938/VPC/NACL%26SC-GROUP.png)
 ## Steps to Create VPC
 ```
 1. Create VPC
@@ -113,17 +101,7 @@ Types of VPC → 1. Default VPC
 
 
 ## Difference between NACL & Security Group
-
-| Feature          | **Security Group (SG)**                             | **NACL (Network ACL)**                     |
-| ---------------- | --------------------------------------------------- | ------------------------------------------ |
-| Level            | Works at **Instance level**                         | Works at **Subnet level**                  |
-| Type             | **Stateful**                                        | **Stateless**                              |
-| Rules            | **Allow rules only**                                | **Allow & Deny rules**                     |
-| Rule Processing  | No rule number (all rules evaluated together)       | **Numbered rules** (processed in order)    |
-| Inbound/Outbound | If inbound allowed → outbound automatically allowed | Must allow inbound & outbound separately   |
-| Default Behavior | Default → **Deny all inbound**, Allow all outbound  | Default → **Allow all inbound & outbound** |
-| Acts Like        | Virtual firewall for EC2                            | Extra layer of subnet security             |
-| Applied To       | Individual instances                                | Entire subnet                              |
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/2276e5c262a573d4ad8f9a7766f131d8bbdc1938/VPC/NACL%26SC-GROUP.png)                             |
 ##notes
 ```
 - If traffic is allowed in Security Group, response traffic is automatically allowed (because   it is stateful).
