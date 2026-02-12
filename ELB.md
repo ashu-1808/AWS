@@ -84,3 +84,89 @@ They determine whether a target is healthy and able to receive traffic
   (Smaller than timeout)
 
 ```
+
+
+
+## Steps to Create ELB (Application Load Balancer – ALB)
+```
+Step 1: Launch EC2 Instances
+ 1. Go to EC2 Dashboard
+ 2. Click Launch Instance
+ 3. Choose Amazon Linux / Windows AMI
+ 4. Select instance type (e.g., t2.micro)
+ 5. Configure:
+   - Select your VPC
+   - Choose Public Subnet
+   - Enable Auto-assign Public IP
+ 6. Configure Security Group
+   - Allow HTTP (Port 80)
+   - Allow HTTPS (Port 443) if needed
+ 7. Click Launch
+ 8. Launch at least 2 EC2 instances (for load balancing)
+
+Step 2: Create Target Group
+ 1. Go to EC2 Dashboard
+ 2. In left panel → Click Target Groups
+ 3. Click Create target group
+ 4. Choose: - Target type →  Instances
+            - Protocol → HTTP
+            - Port → 80
+ 5. Select your VPC
+ 6. Configure Health Check (default is fine)
+ 7. Click Next
+ 8. Register your EC2 instances
+ 9. Click Create target group
+
+Step 3: Create Load Balancer
+ 1. Go to EC2 Dashboard
+ 2. Click Load Balancers
+ 3. Click Create Load Balancer
+ 4. Choose Application Load Balancer
+ 5. Click Create
+
+Step 4: Configure Load Balancer
+ 1. Enter Name
+ 2. Scheme → Internet-facing
+ 3. IP type → IPv4
+ 4. Add Listeners
+    HTTP (Port 80)
+
+Step 5: Select Network Mapping
+ 1. Select your **VPC**
+ 2. Choose at least **2 Public Subnets** (Different Availability Zones)
+
+Step 6: Configure Security Group
+ 1. Create new or select existing Security Group
+ 2. Allow:
+       HTTP (80)
+       HTTPS (443) if required
+ 
+Step 7: Configure Routing
+ 1. Select the Target Group created earlier
+ 2. Click Next
+
+Step 8: Review & Create
+ 1. Review all settings
+ 2. Click Create Load Balancer
+
+Step 9: Testing
+ 1. Copy the DNS name of the Load Balancer
+ 2. Paste it in browser
+ 3. Refresh multiple times
+ 4. You will see traffic distributed between EC2 instances
+
+
+```
+#  Final Architecture After ELB Setup
+
+```
+User
+  ↓
+Application Load Balancer
+  ↓
+Target Group
+  ↓       ↓
+EC2-1   EC2-2
+```
+
+
