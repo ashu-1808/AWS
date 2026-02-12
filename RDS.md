@@ -42,6 +42,8 @@ Table
    - Famous RDBMS: MySQL, Oracle, MariaDB, IBM-DB2
 ```
 
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/222fc7b7445c62b0668fea67c580965e3fc734aa/Table.png)
+
 ## RDBMS vs NoSQL
 
 | Feature     | RDBMS                     | NoSQL                     |
