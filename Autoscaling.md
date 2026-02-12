@@ -6,23 +6,6 @@ Here are your notes written **as it is**, plus **clean text diagrams recreated e
 
 Autoscaling automatically adds or removes EC2 instances based on demand so your application stays available, performant and cost efficient.
 
----
-
-### Autoscaling Group
-
-* Desired = 1
-* Minimum = 1
-* Maximum = 5
-
-```
-                Application
-                     │
-        ---------------------------------
-        |               |              |
-       S1 (running)    S2             S3
-                        S4             S5
-                (AutoScaling Group)
-```
 
 Autoscaling monitors and automatically adjusts the capacity to maintain steady performance at the lowest price.
 
@@ -34,38 +17,18 @@ Autoscaling enables elasticity by scaling horizontally by adding or termination 
 
 ---
 
-# Vertical Scaling (Manual Process)
+Autoscaling Group
+ - Desired = 1
+ - Minimum = 1
+ - Maximum = 5
 
-```
-          Truck
-            ↑
-           Car
-            ↑
-           Bike
-            ↑
-          Cycle
-```
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/cb6fd83dadf23392c413611147fb4fcf7c2aed07/autoscaling-group.png)
 
-Vertical scaling = Increasing server capacity
-(Upgrade instance size: small → medium → large)
 
----
 
-# Horizontal Scaling (Automatic Process)
 
-```
-Users
-  ↓
----------------------------------
-Server1   Server2   Server3   Server4
----------------------------------
-```
 
-Horizontal scaling = Increasing number of servers
-
----
-
-# Types
+# Scaling Types
 
 1. Vertical scaling – Servers capacity increase
 2. Horizontal scaling – Increasing number of servers
