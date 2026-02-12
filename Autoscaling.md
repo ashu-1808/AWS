@@ -19,16 +19,24 @@
 
 
 ## Scaling Types
-![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/30ac357b94dce5db2262d8cfc8f928e7b43ce2b6/Scaling%20types.png)
-```
+
+ ```
 1. Vertical scaling – Servers capacity increase
 2. Horizontal scaling – Increasing number of servers
  ```
-  | Feature     | Vertical Scaling                                          | Horizontal Scaling          |
-| ----------- | --------------------------------------------------------- | --------------------------- |
-| Definizione | Aumenta la capacità del singolo server                    | Aumenta il numero di server |
-| Come scala  | Upgrade hardware / instance size (small → medium → large) | Aggiunge nuove istanze      |
-| Processo    | Manuale, spesso richiede                                  |                             |
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/30ac357b94dce5db2262d8cfc8f928e7b43ce2b6/Scaling%20types.png)
+
+
+| Feature            | Vertical Scaling                                          | Horizontal Scaling                     |
+| ------------------ | --------------------------------------------------------- | -------------------------------------- |
+| Definizione        | Aumenta la capacità del singolo server                    | Aumenta il numero di server            |
+| Come scala         | Upgrade hardware / instance size (small → medium → large) | Aggiunge nuove istanze                 |
+| Processo           | Manuale, spesso richiede restart                          | Automatico, scale on demand            |
+| Downtime           | Possibile durante upgrade                                 | Minimo o assente                       |
+| Fault Tolerance    | Single point of failure                                   | Alta disponibilità (ridondanza)        |
+| Limite di crescita | Limitato dall’hardware massimo disponibile                | Quasi illimitato                       |
+| Complessità        | Più semplice da gestire                                   | Più complesso (load balancer, sync)    |
+| Ideale per         | Carichi prevedibili, app piccole                          | Traffico variabile, sistemi enterprise |
 
 
 ---
