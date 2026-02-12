@@ -84,29 +84,29 @@ Table
  
 ## Steps for RDS
 ```
-1. Select **Standard create**
-2. Choose **Engine option and its version**
-3. Give **Database name (console-name)**
-   Master username **admin** & master-password
-4. Choose **Storage**
-5. Choose **Availability and durability**
+1. Select Standard create
+2. Choose Engine option and its version
+3. Give (Database name (console-name)
+   Master username admin & master-password
+4. Choose Storage
+5. Choose Availability and durability
    (Gives option to create standby instance)
 6. Connectivity
  i. Choose if you want to connect it to EC2 or not
  ii. Check network type
  iii. Choose VPC or get default
  iv. Public access or not
- v. VPC security group → **RDS-security** (if not there then create it)
+ v. VPC security group → RDS-security (if not there then create it)
  vi.(Additional configuration)
-    a. Give database name (  **Real-database-name**) → **DB-1**
+    a. Give database name (Real-database-name) → DB-1
     b. Backup option or Backup replication
     c. Maintenance option
 7. Go to RDS Security Group & Edit Inbound Rules
-     Add: 1. MySQL/Aurora → Anywhere → Port: **3306**
-          2. SSH → Anywhere → **22**
-          3. HTTP → Anywhere → **80**
-          4. HTTPS → Anywhere → **443**
-          5. Custom TCP → Anywhere → **8080**
+     Add: 1. MySQL/Aurora → Anywhere → Port: 3306
+          2. SSH → Anywhere → 22
+          3. HTTP → Anywhere → 80
+          4. HTTPS → Anywhere → 443
+          5. Custom TCP → Anywhere → 8080
 8. Connect Ubuntu Instance
    → sudo -i
    → apt install mysql-client -y
@@ -116,16 +116,16 @@ Table
    → mysql> exit
 
  9. Backend Setup
-    → git clone https://github.com/shubhamkalgat/cloudblitz-student-app.git
-    → cd cloudblitz-student-app
-    → cd backend
-    → apt install openjdk-17-jdk -y
-    → java --version
-    → apt install maven -y
-    → mvn --version
-    → mvn clean
+   → git clone https://github.com/shubhamkalgat/cloudblitz-student-app.git
+   → cd cloudblitz-student-app
+   → cd backend
+   → apt install openjdk-17-jdk -y
+   → java --version
+   → apt install maven -y
+   → mvn --version
+   → mvn clean
 10. To connect backend to frontend
-    → vim src/main/resources/application.properties
+   → vim src/main/resources/application.properties
     - Press `i` → To enter insert mode
     - (Edit localhost with endpoint of database)
       spring.datasource.url=jdbc:mariadb://<database-endpoint>:3306/student_db
@@ -136,23 +136,23 @@ Table
          to save & exit
 
 11. Build:
-    → mvn clean package
+   → mvn clean package
 
     (It will build code)
     ...... (Build success)
       
 13. Install NodeJS:
-    → apt install nodejs npm -y
-    → npm install 
+   → apt install nodejs npm -y
+   → npm install 
      (Node package manager)
 
 14. To connect frontend to backend:
    → vim .env
      ( Change URL with instance public URL)
-    - Example:(http://49.503.504.31:8080/api)
+   - Example:(http://49.503.504.31:8080/api)
 
-    - press `esc` then `:wq` to save & exit
-     → npm run build
+   - press `esc` then `:wq` to save & exit
+   → npm run build
 
 
 15. Install Apache Webserver
@@ -170,18 +170,18 @@ Table
    → java -jar (file in red colour)
    (e.g. java -jar student-registration-backend-0.0.1-SNAPSHOT.jar)
 
-- open public URL of instance in browser
-- Add entries
-- keep the old instance running
-- open the same instance on different windows
+ - open public URL of instance in browser
+ - Add entries
+ - keep the old instance running
+ - open the same instance on different windows
 
-→ sudo -i
-→ mysql -h (Endpoint of Database) -u admin -p
-   - Enter password
-   - show databases;
-   - use student_db;
-   - show tables;
-   - select * from users;
+   → sudo -i
+   → mysql -h (Endpoint of Database) -u admin -p
+     - Enter password
+     - show databases;
+     - use student_db;
+     - show tables;
+     - select * from users;
 ```
 
 ```
