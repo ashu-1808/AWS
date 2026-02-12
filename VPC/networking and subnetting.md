@@ -133,7 +133,7 @@ Binary Conversion of /22:
 | 11111111   |       11111111   |     11111100     |    00000000   |
 |------------|------------------|------------------|---------------|
 |  8         |           8      |       6-2        |     8         |             
-| Network    |        Network    |    Net Host     |       Host     |
+| Network    |        Network    |    Net - Host     |       Host     |
 
 
 /22 means:
