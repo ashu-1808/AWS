@@ -20,7 +20,7 @@ Autoscaling enables elasticity by scaling horizontally by adding or termination 
 Autoscaling Group
  - Desired = 2
  - Minimum = 1
- - Maximum = 5
+ - Maximum = 4
 
 ![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/cb6fd83dadf23392c413611147fb4fcf7c2aed07/autoscaling-group.png)
 
