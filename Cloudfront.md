@@ -1,9 +1,6 @@
-Here are your **CloudFront notes** written cleanly and clearly from the image 👇
-
----
 
 # 🌍 CloudFront
-
+---
 ## 🔹 What is CloudFront?
 
 * It is a web service that gives business and web application developers an easy and cost-effective way to distribute content with low latency and high speed data transfer.
