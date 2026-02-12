@@ -24,15 +24,15 @@ Amazon CloudWatch:
 ```
 ```
   2. Namespace :
-   - It is a container of cloudwatch metrics
-   - There is no default namespace, custom app can create custom namespace, AWS uses
+    - It is a container of cloudwatch metrics
+    - There is no default namespace, custom app can create custom namespace, AWS uses
      predefined namespaces
 ```
 ```
   3. Alarms
-   - It watches a single metric for a specific time period, and perform one or more specified action based on the value of the metric relative to a threshold overtime.
-   - Alarms involves actions for sustained state changes only.
-   - Alarm States:
+    - It watches a single metric for a specific time period, and perform one or more specified       action based on the value of the metric relative to a threshold overtime.
+    - Alarms involves actions for sustained state changes only.
+    - Alarm States:
       a. OK
         - Metric is within the defined threshold
         - When system is healthy, no action needed. Alarm condition is not met
@@ -50,7 +50,7 @@ Amazon CloudWatch:
             → Alarm state = Alarm
      c. Insufficient Data
         - Cloudwatch does not have enough data to confirm state
-        - When metric reporting is stopped, instance stopped or terminated then no alarm action triggers (default temporary state)
+        - When metric reporting is stopped, instance stopped or terminated then no alarm                 action triggers (default temporary state)
         - Eg:
           Your EC2 instance is stopped then no CPU metric is generated,
            then alarm state is Insufficient data.
