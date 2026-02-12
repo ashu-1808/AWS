@@ -1,6 +1,34 @@
 # NAT-Gateway
 
+## What is NAT Gateway?
+
+  A NAT (Network Address Translation) Gateway allows instances in a private subnet to access     the internet.
+  But prevents the internet from initiating a connection with those instances.
+  It provides outbound internet access only.
+Why Do We Need NAT Gateway?
+ - Private subnet instances do not have public IP
+ - They cannot access internet directly
+ - NAT Gateway enables: - Software updates
+                      - Downloading packages
+                      - Accessing external APIs
+ - But keeps them secure (no inbound internet access)
+
+
+
+How NAT Gateway Works (Flow)
+ `Private EC2 → Route Table → NAT Gateway → Internet Gateway → Internet`
+
+
+Important Points (Interview Ready)
+ - NAT Gateway works only in public subnet
+ - Requires Elastic IP
+ - Only allows outbound traffic
+ - Highly available within an Availability Zone
+ - Managed service (no maintenance required)
+
 ## Steps to Create NAT Gateway
+
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/27374f3cb63a2fafd2943137b00f62e35e5cc34e/VPC/NAT-gateway.png)
 
 ```
 Step 1 [Create VPC]
