@@ -68,11 +68,15 @@ Table
    3. Software updates for DB
    4. AWS provides Disaster recovery
    5. By default, every DB has weekly maintenance window of (1–35 days) can be created               manually.
+```
+![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/59ca1ae86e836b3e058a05621b4ffe018a1a09a1/az-to%20az.png)
 
+```
 - There are some settings managed by users:
     1. Managed DB instances
     2. Creation of relational database schema or design of database
-
+```
+```
 - There are 8 Relational Database options on AWS:
     1. Aurora (MySQL – compatible)
     2. Aurora (PostgreSQL – compatible)
