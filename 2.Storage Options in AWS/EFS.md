@@ -47,8 +47,10 @@ On each EC2:
 → yum install amazon-efs-utils -y
 → mkdir /efs
 
-Mount EFS:
+Mount EFS:(go to EFS and select DNS mount helper to mount)
 → mount -t efs fs-xxxx:/ /efs
+  ........(copy command on all instances and paste it.)
+
 
 Step 7: Test Shared Storage
 → On EC2 in AZ1
