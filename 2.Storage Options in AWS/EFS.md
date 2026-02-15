@@ -3,7 +3,7 @@
 ```
 -EFS is a file storage service for EC2.
 -Multiple EC2 instances (even across AZ) can access the same files.
--Uses NFS protocol (port 2049).
+-Uses NFS(Network File System) protocol (port 2049).
 -Automatically grows and shrinks.
 -Ideal for shared access workloads.
 -Fully managed and scalable.
