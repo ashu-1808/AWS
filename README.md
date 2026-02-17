@@ -37,6 +37,16 @@ Cloud computing is on demand delivery of compute power, database and other resou
 ```
 ![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/5fd65e50807bc4c46f1cda6c911bbd39c2ed40b0/hypervisor%20types.png)
 
+| Feature          | Bare Metal                       | Hoasted (VM)                         |
+| ---------------- | -------------------------------- | -------------------------------------------- |
+| Definition       | Direct access to physical server | Virtual server running on physical hardware  |
+| Hypervisor       | No hypervisor                    | Uses hypervisor                              |
+| Performance      | Very high                        | Slightly lower (due to virtualization layer) |
+| Resource Sharing | Not shared                       | Shared with other VMs                        |
+| Cost             | Expensive                        | More cost-effective                          |
+| Use Case         | High-performance workloads       | General applications & web hosting           |
+
+
 ## Virtualization :
 ```
 -It helps in virtualization in AWS.
