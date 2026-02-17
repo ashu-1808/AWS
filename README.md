@@ -1,5 +1,5 @@
 # AWS
-
+AWS is a cloud platform that provides computing resources like servers, storage, databases, and networking over the internet on a pay-as-you-go basis.
 ## Cloud Computing :
 Cloud computing is on demand delivery of compute power, database and other resources through a cloud provider via internet.
 
