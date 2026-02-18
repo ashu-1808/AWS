@@ -46,10 +46,11 @@ Important Points
 - Snapshots are Region specific.
 - Snapshot can be used to create a new volume.
 - Snapshot can be copied to another region.
-
-Limits (Default)
-- Up to -5000 EBS volumes- per account.
-- Up to -10,000 snapshots- per region.
+- EBS Snapshot Quotas (Default Limits)
+   1.Total Snapshots: Up to 100,000 per region.
+   2.Concurrent Copies: Maximum 20 per destination region.
+   3.Concurrent Restores: 5 per account.
+   4.Archived Snapshots: 25 per volume.
 ```
 ## EBS Snapshot Creation –
 ![image alt](https://github.com/ashu-1808/AWS/blob/f898c23ea9822512b67c9a5eb74a1f2e88f9de51/download.png)
