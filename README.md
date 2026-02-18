@@ -116,13 +116,13 @@ Cloud computing is on demand delivery of compute power, database and other resou
 
 
 📦 Data Flow Example
- 1. Application → HTTP request
- 2. Presentation → Encryption
- 3. Session → Session established
- 4. Transport → TCP segments
- 5. Network → IP routing
- 6. Data Link → Frame with MAC
- 7. Physical → Bits on cable
+ 1 Physical → Transmits raw bits over cable (electrical/optical signals)
+ 2 Data Link → Frames created, MAC address used for local delivery
+ 3 Network → IP address used for routing between networks
+ 4 Transport → TCP/UDP segments, port numbers, reliability control
+ 5 Session → Session establishment and management
+ 6 Presentation → Encryption/Decryption, formatting
+ 7 Application → HTTP request processed by application
  
 ```
 
