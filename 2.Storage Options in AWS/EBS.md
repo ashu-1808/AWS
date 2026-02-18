@@ -92,7 +92,7 @@ step 6. Login to EC2-B
 ---
 
 🔥 Important Interview Points
-  1. EBS is **AZ specific**
+  1. EBS is AZ specific
   2. Cannot attach same EBS to 2 instances at same time (except Multi-Attach for io1/io2)
   3. Always unmount before detaching
   4. Never format volume again on second instance
