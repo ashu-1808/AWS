@@ -126,9 +126,7 @@ Cloud computing is on demand delivery of compute power, database and other resou
  
 ```
 
-
-
-
+![image alt](https://github.com/ashu-1808/AWS/blob/f4307431631f717353102e5594ea1b2c1c9cedf0/osi-model-7-layers-1.jpg)
 
 
 
