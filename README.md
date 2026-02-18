@@ -70,7 +70,7 @@ Cloud computing is on demand delivery of compute power, database and other resou
 
 
 
-🔢 7 Layers of OSI Model (Top to Bottom)
+## 7 Layers of OSI Model (Top to Bottom)
 ```
 7. Application Layer
  - Closest to end user
