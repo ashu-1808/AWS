@@ -21,6 +21,90 @@ EC2 Storage Options:
 ![image alt](https://github.com/Ashu-1808/AWS-cloud-computing-for-devops/blob/6370cb53b7f41d6a7f9b0a06679fcce2554971ca/EBS_Volume_Types.png)
 
 
+
+#  Create EBS → Attach to EC2-A → Add Data → Detach → Attach to EC2-B → Verify Data
+
+```
+Step 1. Create EBS Volume
+Go to AWS Console → EC2 → Volumes
+ -Click Create Volume
+ -Type: gp3
+ -Size: 12 GiB
+ -Select Same Availability Zone as EC2-A
+ -Click Create Volume
+
+Step 2. Attach EBS to EC2-A
+ -Select Volume
+ -Click Actions → Attach Volume
+  Choose EC2-A
+ -Device name:
+  /dev/sdf
+ -Click Attach
+
+Step 3. Login to EC2-A
+ -Check Disk
+  lsblk
+ -Create Filesystem
+  sudo mkfs -t ext4 /dev/xvdf
+ -Create Directory
+  sudo mkdir /data
+ -Mount Volume
+  sudo mount /dev/xvdf /data
+ -Add Data
+  cd /data
+  sudo echo "Hello from EC2-A" > test.txt
+  cat test.txt
+
+Step 4. Detach Volume from EC2-A
+ -Unmount
+   sudo umount /data
+ -Go to Console → Volumes
+ -Click Detach Volume
+   Wait until status = Available
+
+Step 5. Attach to EC2-B
+ -Select Volume
+ -Click Attach Volume
+   Choose EC2-B
+ -Device name:
+   /dev/sdf
+ -Click Attach
+
+step 6. Login to EC2-B
+  -Check Disk
+   lsblk
+⚠ Do NOT format again
+  -Create Directory:
+   sudo mkdir /data
+  -Mount:
+   sudo mount /dev/xvdf /data
+  -Verify Data:
+   cd /data
+   ls
+   cat test.txt
+  -Output:
+   Hello from EC2-A
+
+✅ Data successfully transferred between EC2 instances.
+
+---
+
+🔥 Important Interview Points
+  1. EBS is **AZ specific**
+  2. Cannot attach same EBS to 2 instances at same time (except Multi-Attach for io1/io2)
+  3. Always unmount before detaching
+  4. Never format volume again on second instance
+  5. EBS is persistent storage
+
+
+🎯 Real-Time Use Case
+  1. Moving application data between servers
+  2. Migrating data to new EC2 instance
+  3. Backup and restore operations
+  4. Disaster recovery testing
+```
+
+
 ## EBS Snapshot Creation –
 ![image alt](https://github.com/ashu-1808/AWS/blob/f898c23ea9822512b67c9a5eb74a1f2e88f9de51/download.png)
 
