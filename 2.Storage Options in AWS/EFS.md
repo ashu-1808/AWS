@@ -89,10 +89,10 @@ All EC2 Instances → Connected to One Amazon EFS File System
 
 
 # Key Technical Points
-  1. Amazon EFS is a **regional service**.
-  2. Mount targets are **Availability Zone specific**.
-  3. EFS uses **NFS version 4.1**.
-  4. Port used: **2049**.
+  1. Amazon EFS is a regional service.
+  2. Mount targets are Availability Zone specific.
+  3. EFS uses NFS version 4.1.
+  4. Port used: 2049.
   5. Multiple EC2 instances across AZs can access the same file system simultaneously.
 ```
 
